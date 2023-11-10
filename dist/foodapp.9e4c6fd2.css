@@ -1,0 +1,38 @@
+.titleimg {
+  width: 100px;
+}
+
+.head {
+  justify-content: space-between;
+  display: flex;
+}
+
+.navbar > ul {
+  flex-direction: row;
+  display: flex;
+}
+
+.navbar > ul > li {
+  justify-content: space-between;
+  padding: 10px 30px;
+  display: flex;
+}
+
+.card {
+  border: 1px solid #000;
+  width: 200px;
+  margin: 7px;
+  padding: 10px;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.cards {
+  flex-wrap: wrap;
+  padding: 20px;
+  display: flex;
+}
+
+/*# sourceMappingURL=foodapp.9e4c6fd2.css.map */

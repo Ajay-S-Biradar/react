@@ -8,17 +8,32 @@
 
 // console.log(out);
 
-const users = [
-    {firstname:"ajay", lastname:"biradar"},
-    {firstname:"abhi", lastname:"GD"},
-    {firstname:"sag", lastname:"saha"},
-    {firstname:"ayu", lastname:"singh"},
-]
+// const users = [
+//     {firstname:"ajay", lastname:"biradar"},
+//     {firstname:"abhi", lastname:"GD"},
+//     {firstname:"sag", lastname:"saha"},
+//     {firstname:"ayu", lastname:"singh"},
+//     function fun2() {
+//         return 2;
+//     }
+// ]
 
-function fun(x){
-    return (x.firstname + x.lastname);
-}
+// function fun(x){
+//     return (x.firstname + x.lastname);
+// }
 
-const out = users.map(fun);
+// const out = users.map(fun);
 
+// function z (){
+//     return 3;
+// }
+
+//promises in js 
+
+
+
+
+
+
+console.log(y?.());
 

@@ -1,35 +1,5 @@
-.titleimg{
-    width:100px;
-}
+@tailwind base;
 
-.head{
-    display: flex;
-    justify-content: space-between;
-}
+@tailwind components;
 
-.navbar > ul {
-    display: flex;
-    flex-direction: row;
-}
-
-.navbar > ul >li {
-    display:flex;
-    justify-content: space-between;
-    padding: 10px 30px;
-}
-
-.card{
-    margin: 7px;
-    padding: 10px;
-    width: 200px;
-    border: 1px solid black;
-}
-.card > img{
-    width: 100%;
-}
-
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-}
+@tailwind utilities;

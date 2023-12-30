@@ -1,0 +1,53 @@
+.shimmershow {
+    background: #f6f7f8;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    width: 210px;
+    height: 470px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .shimmer{
+    padding: 20px;
+    margin: 7px;
+}
+  
+  .shimmer-box, .shimmer-line {
+    background: linear-gradient(to right, #f6f7f8 0%, #edeef1 50%, #f6f7f8 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    margin: 15px;
+    border-radius: 5px;
+  }
+
+.shimmer-box{
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.shimmer-line{
+    height: 70px;
+}
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+  .shimmer-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 30px
+  }
+  

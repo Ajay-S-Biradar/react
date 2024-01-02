@@ -24,19 +24,12 @@ const RestoMenu = ()=>{
         console.log(data);
         const info = await (json?.data?.cards[0]?.card?.card?.info);
         setRestaurantInfo(info);
-        const menu = json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
-        await menu.map((x)=>{
-            items.push(x?.card?.card?.itemCards);
-        }) ;
-        
-        await items.map((x)=>{
-            itemNames.push(x);
-        })
-        setRestaurantMenu(itemName);
-        setRestaurantInfo(info);    
+        const menu = json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card?.card?.itemCards;
+        setRestaurantMenu(menu);
     }
 
     return (RestaurantInfo.length===0)?<Shimmer />:(
+        <>
         <div className="flex justify-center p-5 m-5" >
             <img className="w-64" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+RestaurantInfo?.cloudinaryImageId}></img>
             <div className="p-6 m-5">
@@ -51,6 +44,22 @@ const RestoMenu = ()=>{
             </ul>
             </div>
         </div>
+
+        <div className="">
+              <h2>Menu</h2>
+              {RestaurantMenu.map(
+                (x) => {
+                    console.log(x?.card?.info?.defaultPrice);
+                  return (
+                    <p>
+                      {x?.card?.info?.name} Rs{" "}
+                      {Math.floor(x?.card?.info?.defaultPrice / 100)}
+                    </p>
+                  );
+                }
+              )}    
+        </div>
+        </>
     )
 }
 

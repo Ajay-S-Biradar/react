@@ -29,8 +29,7 @@ const BodyComponent = ()=>{
       const data = await fetch(api);
       const json = await data.json();
       console.log(json);
-      const x = (json?.data.cards[2].card.card.gridElements.infoWithStyle
-        .restaurants);
+      const x = (json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
       console.log(x);
       setRestoList(x)
       setconstresto(x);
